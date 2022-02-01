@@ -4,6 +4,28 @@
   box-sizing: border-box;
 }
 
+.scroll-nav {
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  a {
+    display: block;
+    .fa-square-full {
+      font-size: 0.8rem;
+    }
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    border: solid 1px #000000;
+    left: 50%;
+    bottom: -40px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
 .container {
   .area {
     text-align: center;
