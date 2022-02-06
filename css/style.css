@@ -8,6 +8,11 @@
   position: fixed;
   top: 50%;
   right: 10px;
+  opacity: 0;
+}
+
+.scroll-nav.fadeIn {
+  opacity: 5;
 }
 
 .scroll-nav a {
@@ -15,7 +20,7 @@
 }
 
 .scroll-nav a .fa-square-full {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 .scroll-nav::before {

@@ -8,10 +8,14 @@
   position: fixed;
   top: 50%;
   right: 10px;
+  opacity: 0;
+  &.fadeIn {
+    opacity: 5;
+  }
   a {
     display: block;
     .fa-square-full {
-      font-size: 0.8rem;
+      font-size: 0.7rem;
     }
   }
   &::before {
