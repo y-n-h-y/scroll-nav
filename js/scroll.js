@@ -1,14 +1,15 @@
 function ScrollNavi() {
   var winScrollTop = $(this).scrollTop();
   var pt1 = $("#scroll-pt1").offset().top - 150;
-  var pt2 = $("#scroll-pt2").offset().top - 50;
+  var pt2 = $("#scroll-pt2").offset().top - 150;
   var pt3 = $("#scroll-pt3").offset().top - 150;
   var pt4 = $("#scroll-pt4").offset().top - 150;
 
   if (winScrollTop >= pt1) {
     $(".scroll-nav").addClass("fadeIn");
   } else if (winScrollTop >= pt2) {
-    $(".scroll-nav").css("right", "20px");
+    $(".scroll-nav").removeClass("fadeIn");
+    $(".scroll-nav").addClass("positionLeft");
   }
 }
 

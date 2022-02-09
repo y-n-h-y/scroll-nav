@@ -12,6 +12,9 @@
   &.fadeIn {
     opacity: 5;
   }
+  &.positionLeft {
+    background-color: #000000;
+  }
   a {
     display: block;
     .fa-square-full {

@@ -15,6 +15,10 @@
   opacity: 5;
 }
 
+.scroll-nav.positionLeft {
+  background-color: #000000;
+}
+
 .scroll-nav a {
   display: block;
 }
