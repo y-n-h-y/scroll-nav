@@ -5,10 +5,9 @@ function ScrollNavi() {
   var pt3 = $("#scroll-pt3").offset().top - 150;
   var pt4 = $("#scroll-pt4").offset().top - 150;
 
-  if (winScrollTop >= pt1) {
+  if (winScrollTop > pt1) {
     $(".scroll-nav").addClass("fadeIn");
-  } else if (winScrollTop >= pt2) {
-    $(".scroll-nav").removeClass("fadeIn");
+  } else if (winScrollTop < pt1 && winScrollTop > pt2) {
     $(".scroll-nav").addClass("positionLeft");
   }
 }

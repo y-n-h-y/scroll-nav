@@ -9,14 +9,15 @@
   top: 50%;
   right: 10px;
   opacity: 0;
+  transition: all 0.2s ease-in-out;
 }
 
 .scroll-nav.fadeIn {
-  opacity: 5;
+  opacity: 1;
 }
 
 .scroll-nav.positionLeft {
-  background-color: #000000;
+  right: 95%;
 }
 
 .scroll-nav a {
