@@ -7,7 +7,7 @@ function ScrollNavi() {
 
   if (winScrollTop > pt1) {
     $(".scroll-nav").addClass("fadeIn");
-  } else if (winScrollTop < pt1 && winScrollTop > pt2) {
+  } else if (winScrollTop > pt1 && winScrollTop > pt2) {
     $(".scroll-nav").addClass("positionLeft");
   }
 }
