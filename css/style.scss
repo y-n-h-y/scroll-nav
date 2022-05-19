@@ -4,22 +4,22 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+}
+
 .scroll-nav {
   position: fixed;
   top: 50%;
   right: 10px;
   opacity: 0;
   transition: all 0.2s ease-in-out;
-  &.fadeIn {
-    opacity: 1;
-  }
-  &.positionLeft {
-    right: 95%;
-  }
-  a {
-    display: block;
-    .fa-square-full {
-      font-size: 0.7rem;
+  > li {  
+    a {
+      display: block;
+      .fa-square-full {
+        font-size: 0.7rem;
+      }
     }
   }
   &::before {

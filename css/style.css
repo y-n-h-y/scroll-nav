@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+}
+
 .scroll-nav {
   position: fixed;
   top: 50%;
@@ -11,23 +15,12 @@
   opacity: 0;
   transition: all 0.2s ease-in-out;
 }
-
-.scroll-nav.fadeIn {
-  opacity: 1;
-}
-
-.scroll-nav.positionLeft {
-  right: 95%;
-}
-
-.scroll-nav a {
+.scroll-nav > li a {
   display: block;
 }
-
-.scroll-nav a .fa-square-full {
+.scroll-nav > li a .fa-square-full {
   font-size: 0.7rem;
 }
-
 .scroll-nav::before {
   position: absolute;
   content: "";
@@ -35,10 +28,11 @@
   border: solid 1px #000000;
   left: 50%;
   bottom: -40px;
-  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
 .container .area {
   text-align: center;
+}
+/*# sourceMappingURL=style.css.map */r;
 }
