@@ -10,32 +10,84 @@ ul {
 
 .scroll-nav {
   position: fixed;
-  top: 50%;
-  right: 10px;
+  bottom: 30%;
+  right: 30px;
   opacity: 0;
-  transition: all 0.2s ease-in-out;
   > li {  
+    padding: 15px 0;
+    text-align: center;
     a {
       display: block;
+      &:hover {
+        .fa-square-full {
+          animation: transparency 1.5s infinite;
+          .frame {
+            animation: telescopic 1.5s infinite;
+            opacity: 1;
+          }
+        }
+      }
       .fa-square-full {
-        font-size: 0.7rem;
+        display: block;
+        position: relative;
+        font-size: 0.6rem;
+      }
+      .frame {
+        display: block;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border: solid 1px #000000;
+        top: 0;
+        left: 0;
+        opacity: 0;
+      }
+      .addSquare {
+        animation: transparency 1.5s infinite;
+      }
+      .addFrame {
+        animation: telescopic 1.5s infinite;
       }
     }
   }
   &::before {
     position: absolute;
     content: "";
-    height: 30px;
+    height: 40px;
     border: solid 1px #000000;
     left: 50%;
-    bottom: -40px;
+    bottom: -50px;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
 }
-
+.positionLeft {
+  right: 97%;
+}
 .container {
   .area {
     text-align: center;
+  }
+}
+
+@keyframes telescopic {
+  from {
+    transform: scale(0.95) translate(-25%, -25%);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.05) translate(-25%, -25%);
+    opacity: 0;
+  }
+}
+
+@keyframes transparency {
+  from {
+    opacity: 0.7;
+  }
+
+  to {
+    opacity: 1;
   }
 }
